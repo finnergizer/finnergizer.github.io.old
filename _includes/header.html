@@ -1,5 +1,14 @@
 <header class="site-header">
+  <ul id="instagram-feed">
+    {% for picture in site.data.instagram-pictures %}
+    <li>
+      <a title="{{picture.caption}}" href="{{picture.link}}">
+        <img src="{{picture.src}}">
+      </a>
+    </li>
+    {% endfor %}
 
+  </ul>
   <div class="wrapper">
 
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
@@ -23,5 +32,11 @@
     </nav>
 
   </div>
+  <script>
+    (function($) {
+      $("#instagram-feed").simplyScroll();
+    })(jQuery);
+
+  </script>
 
 </header>
