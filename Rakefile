@@ -35,6 +35,7 @@ namespace :blog do
       Dir.chdir tmp
 
       # Prepare all the content in the repo for deployment.
+      system "touch .nojekyll"
       system "git init" # Init the repo.
       system "git add . && git commit -m 'Site updated at #{Time.now.utc}'" # Add and commit all the files.
 
@@ -42,7 +43,7 @@ namespace :blog do
       system "git remote add origin #{origin}"
 
       # Push the files to the gh-pages branch, forcing an overwrite.
-      system "git push origin master:refs/heads/gh-pages --force"
+      system "git push origin master:refs/heads/master --force"
     end
 
     # Done.
