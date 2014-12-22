@@ -7,8 +7,8 @@
       </a>
     </li>
     {% endfor %}
-
   </ul>
+
   <div class="wrapper">
 
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
@@ -24,15 +24,18 @@
 
       <div class="trigger">
         {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
+        {% if page.title %}
+        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %}
         {% endfor %}
+        <a class="page-link" href="{{site.sandbox_url}}">Development Sandbox</a>
       </div>
     </nav>
 
 
   </div>
+
+
   <script>
     (function($) {
       $("#instagram-feed").simplyScroll();

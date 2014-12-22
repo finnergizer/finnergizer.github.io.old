@@ -3,9 +3,22 @@ layout: page
 title: About
 permalink: /about/
 ---
+<div><img style="float: right" src="/img/shaughn.png"></div><br>
+Hi I'm Shaughn Finnerty, a fourth year CS student at University of Ottawa with a passion for exploring all things tech.
+While I haven't figured out a specific niche on which to focus this blog, I've decided for the time being 
+to dedicate it as a place to share all of my exploratory successes and failures. 
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+When I am not at my desk studying or behind my keyboard, I enjoy hunting, fishing, snowboarding, wakeboarding - pretty 
+well all things outdoors. Beginner photography is also an interest of mine (stress on beginner), as well as playing
+guitar.
+ 
+Since starting CS studies, I have had various work experience as a software developer at Versaterm, NetFore Systems, and some very
+cool government organizations.  
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+<div>
+Got a cool, up and coming framework, plugin, or app you want to share?
+Want me to write about a specific topic?
+Want to discuss or work on some projects?
+Shoot me a message!
+</div>
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
