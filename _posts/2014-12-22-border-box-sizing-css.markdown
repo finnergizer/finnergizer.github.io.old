@@ -116,9 +116,10 @@ div with padding to fit the entire width of its parent.  Lets give it a shot...
     background-color: blue;
     color: white;
     <b>
-    box-sizing: border-box
+
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    box-sizing: border-box
     </b>
 }
 </pre>
@@ -127,8 +128,7 @@ div with padding to fit the entire width of its parent.  Lets give it a shot...
 because before the box-sizing property became an officially released specification, vendors implemented their own
 versions of the property for use in browsers (and they did not want any namespace conflicts when it did become an officially
 released specification). Typically adding these prefixed properties allow for older browser versions
-to support the property if they do not implement it since the browser versions were released before the official specification.
-Browsers will resolve to use the most appropriate property of all three.*
+to support the property if they do not implement it since the browser versions were released before the official specification.*
 
 **HTML:**
 
