@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Border-box CSS sizing and expanding a div within a div"
-date:   2014-12-22
-categories: css design
+title:  "Word Sense Disambiguation in Information Retrieval"
+date:   2015-03-19
+categories: information retrieval research
 comments: true
 ---
 
