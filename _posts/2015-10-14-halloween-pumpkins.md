@@ -10,4 +10,4 @@ comments: true
 Hint: One of my favorite programming languages as of late!
 
 
-![Node.js Inspired Pumpkin](/img/halloween-pumpkins-2015.jpg "Node.js Inspired Pumpkin")
+![Node.js Inspired Pumpkin](/img/halloween-pumpkins-2015.JPG "Node.js Inspired Pumpkin")
