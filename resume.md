@@ -6,13 +6,13 @@ permalink: /resume/
 
 <html><head></head><body>
 
-
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-  	<title>Shaughn Finnerty</title>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+    <title>Shaughn Finnerty</title>   
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <style>
-  	body {
+    body {
   background: #fff;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -65,8 +65,8 @@ blockquote {
   height: 80px;
   background-size: 80px;
 
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%; 
+  -webkit-border-radius: 50%; 
   border-radius: 50%;
   border-color: #FFF;
   border-style: solid;
@@ -196,12 +196,12 @@ blockquote {
     max-width: 768px;
   }
 
-  .contact,
-  .profiles,
-  .overview,
-  .highlights,
-  .education .item,
-  .interests,
+  .contact, 
+  .profiles, 
+  .overview, 
+  .highlights, 
+  .education .item, 
+  .interests, 
   .references {
     width: 45%;
   }
@@ -251,9 +251,9 @@ blockquote {
 
 }
 
-  	</style>
-
-
+    </style>
+  
+  
     <div class="top">
       <div class="container">
         <div class="profile-pic" style="background-image: url(https://avatars2.githubusercontent.com/u/4589389?v=3&amp;s=460)"></div>
@@ -283,7 +283,7 @@ blockquote {
 
         <div><span class="label">Website</span><span class="data">http://shaughn.net</span></div>
 
-        <div><span class="label">Email</span><span class="data"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="a0d3c8c1d5c7c8ce8ec6c9cecec5d2d4d9e0c7cdc1c9cc8ec3cfcd">[email&nbsp;protected]</a><script data-cfhash="f9e31" type="text/javascript">
+        <div><span class="label">Email</span><span class="data"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="1a69727b6f7d7274347c7374747f686e635a7d777b737634797577">[email&nbsp;protected]</a><script data-cfhash="f9e31" type="text/javascript">
 /* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></span></div>
 
         <div><span class="label">Phone</span><span class="data">(613) 585-8175</span></div>
@@ -303,15 +303,15 @@ blockquote {
 
             <div class="details">
               <div class="label">
-                Versaterm
-                <span class="website"><a href="http://www.versaterm.com">http://www.versaterm.com</a></span>
+                Klipfolio
+                <span class="website"><a href="http://www.klipfolio.com">http://www.klipfolio.com</a></span>
               </div>
               <div class="date">
                 <span class="startDate">
-                  2013-05-05
+                  2015-05-01
                 </span>
                 <span class="endDate">
-                  - 2013-08-30
+                  - Present
                 </span>
               </div>
               <div class="position">
@@ -319,14 +319,46 @@ blockquote {
               </div>
 
             </div>
-            <div class="summary">Versaterm delivers Records, Computer Aided Dispatch, and Mobile systems to public safety clients</div>
+            <div class="summary">Klipfolio is an online dashboard platform for building powerful real-time business dashboards for your team or your clients.</div>
           </div>
             <div class="highlights">
             <span class="label">Highlights</span>
               <ul>
-                <li>Developed an HTML5 status screen for reporting to public safety officials using CSS, JavaScript/JQuery, Four Js Genero</li>
-                <li>Planned &amp; presented technical demo for app summary to 50+ colleagues</li>
-                <li>Coded in Vim editor on Red Hat Linux Server</li>
+                <li>Back-end development with Java/Groovy to create custom OAuth integrations with third party APIs like Basecamp, Shopify, iFormBuilder</li>
+                <li>Created a helper API that end users could employ to add hash based authentication parameters to their external API requests to retrieve data</li>
+                <li>Extensive work with RESTful APIs</li>
+                <li>Participate in bi-weekly demos of new features to support, sales, marketing, QA</li>
+              </ul>
+            </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="item">
+          <div class="overview">
+
+            <div class="details">
+              <div class="label">
+                Department of Defense
+              </div>
+              <div class="date">
+                <span class="startDate">
+                  2014-09-04
+                </span>
+                <span class="endDate">
+                  - 2014-12-19
+                </span>
+              </div>
+              <div class="position">
+                Co-op Software Developer
+              </div>
+
+            </div>
+          </div>
+            <div class="highlights">
+            <span class="label">Highlights</span>
+              <ul>
+                <li>Developed a mapping web app using Java, Esri JavaScript API, Dojo, jQuery</li>
+                <li>Redesigned Java-based Oracle database syncing/transfer services with Python, lxml, PyCrypto</li>
+                <li>Prototyped a native Android app using Esri Android SDK and Java</li>
               </ul>
             </div>
           <div class="clearfix"></div>
@@ -369,14 +401,15 @@ blockquote {
 
             <div class="details">
               <div class="label">
-                Department of Defense
+                Versaterm
+                <span class="website"><a href="http://www.versaterm.com">http://www.versaterm.com</a></span>
               </div>
               <div class="date">
                 <span class="startDate">
-                  2014-09-04
+                  2013-05-05
                 </span>
                 <span class="endDate">
-                  - 2014-12-19
+                  - 2013-08-30
                 </span>
               </div>
               <div class="position">
@@ -384,47 +417,14 @@ blockquote {
               </div>
 
             </div>
+            <div class="summary">Versaterm delivers Records, Computer Aided Dispatch, and Mobile systems to public safety clients</div>
           </div>
             <div class="highlights">
             <span class="label">Highlights</span>
               <ul>
-                <li>Developed a mapping web app using Java, Esri JavaScript API, Dojo, jQuery</li>
-                <li>Redesigned Java-based Oracle database syncing/transfer services with Python, lxml, PyCrypto</li>
-                <li>Prototyped a native Android app using Esri Android SDK and Java</li>
-              </ul>
-            </div>
-          <div class="clearfix"></div>
-        </div>
-        <div class="item">
-          <div class="overview">
-
-            <div class="details">
-              <div class="label">
-                Klipfolio
-                <span class="website"><a href="http://www.klipfolio.com">http://www.klipfolio.com</a></span>
-              </div>
-              <div class="date">
-                <span class="startDate">
-                  2015-05-01
-                </span>
-                <span class="endDate">
-                  - Present
-                </span>
-              </div>
-              <div class="position">
-                Co-op Software Developer
-              </div>
-
-            </div>
-            <div class="summary">Klipfolio is an online dashboard platform for building powerful real-time business dashboards for your team or your clients.</div>
-          </div>
-            <div class="highlights">
-            <span class="label">Highlights</span>
-              <ul>
-                <li>Back-end development with Java/Groovy to create custom OAuth integrations with third party APIs like Basecamp, Shopify, iFormBuilder</li>
-                <li>Created a helper API that end users could employ to add hash based authentication parameters to their external API requests to retrieve data</li>
-                <li>Extensive work with RESTful APIs</li>
-                <li>Participate in bi-weekly demos of new features to support, sales, marketing, QA</li>
+                <li>Developed an HTML5 status screen for reporting to public safety officials using CSS, JavaScript/JQuery, Four Js Genero</li>
+                <li>Planned &amp; presented technical demo for app summary to 50+ colleagues</li>
+                <li>Coded in Vim editor on Red Hat Linux Server</li>
               </ul>
             </div>
           <div class="clearfix"></div>
@@ -532,7 +532,7 @@ blockquote {
           <div class="clearfix"></div>
         </div>
       </div>
-
+    
       <div class="education">
         <div class="heading">Education</div>
           <div class="item">
@@ -561,7 +561,7 @@ blockquote {
           </div>
       </div>
       <div class="clearfix"></div>
-
+    
       <div class="skills">
         <div class="heading">Skills</div>
         <div class="item">
@@ -650,8 +650,8 @@ blockquote {
 
       <div class="clearfix"></div>
     </div>
-    <div class="footer"></div>
-
-
+    <div class="footer"></div>  
+  
+  
 
 </body></html>
