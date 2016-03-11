@@ -6,9 +6,9 @@
 </description>
     <link>http://shaughn.net/</link>
     <atom:link href="http://shaughn.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 12 Dec 2015 18:52:03 -0500</pubDate>
-    <lastBuildDate>Sat, 12 Dec 2015 18:52:03 -0500</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Thu, 10 Mar 2016 21:11:50 -0500</pubDate>
+    <lastBuildDate>Thu, 10 Mar 2016 21:11:50 -0500</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
     
       <item>
         <title>Can You Tell I&#39;m the Software Developer in the Family</title>
@@ -93,14 +93,14 @@ word senses in an information retrieval system.&lt;/p&gt;
     }
 &lt;/style&gt;
 
-&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
-&lt;p&gt;When styling an application that I was developing, I came across the problem of trying to expand a child div to fit the
+&lt;p&gt;##The Problem
+When styling an application that I was developing, I came across the problem of trying to expand a child div to fit the
 width of its parent while also having a nice padding to ensure that the content in the div was not flush up against the
 parent div. Naturally, I tried to set &lt;strong&gt;width:100%&lt;/strong&gt; as seen in the following code.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;CSS:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;#parent-div {
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#parent-div {
     width: 300px;
     height: 300px;
     background-color: red;
@@ -113,14 +113,16 @@ parent div. Naturally, I tried to set &lt;strong&gt;width:100%&lt;/strong&gt; as
     color: white;
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;HTML:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&quot;parent-div&quot;&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div id=&quot;parent-div&quot;&amp;gt;
     &amp;lt;div id=&quot;child-div&quot;&amp;gt;
     &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;But this outputs a strange result:&lt;/p&gt;
 
@@ -141,7 +143,7 @@ the child div was 400 pixels wide, thus explaining its larger appearance in the 
 parent, but does not account for the padding that is specified&lt;/strong&gt;, and as a result, the padding pushes the child div
 outside of the parent. The total width of the child div, including the padding, is larger than the width of the parent.&lt;/p&gt;
 
-&lt;h2 id=&quot;the-solution&quot;&gt;The solution&lt;/h2&gt;
+&lt;p&gt;##The solution&lt;/p&gt;
 
 &lt;p&gt;When setting width:100%, I had hoped that this would expand the child div’s width as large as necessary to fill its parent
 while respecting the padding that was set. Afterall, I just wanted the div to expand to fit its parent - not overflow out
@@ -192,11 +194,12 @@ to support the property if they do not implement it since the browser versions w
 
 &lt;p&gt;&lt;strong&gt;HTML:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&quot;parent-div&quot;&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div id=&quot;parent-div&quot;&amp;gt;
     &amp;lt;div id=&quot;child-div&quot;&amp;gt;
     &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;And this gives:&lt;/p&gt;
 
