@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Learn from my mistakes and explore some of my work. Follow the trials of a CS
   student exploring the vast world of software and web development.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://shaughn.net" # the base hostname & protocol for your site
 twitter_username: finnergizer
 github_username:  finnergizer
 instagram_username: finnergizer
@@ -16,3 +16,6 @@ sandbox_url: http://www.finnergizer.com
 markdown: kramdown
 
 exclude: ['Rakefile']
+
+gems:
+  - jekyll-sitemap
