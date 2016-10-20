@@ -211,1256 +211,565 @@
   <article class="post-content">
     <!doctype html>
 <html>
-
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-		<title>Shaughn Finnerty</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-		<style>
-			/********************************************
-* 	reset from
-* 	http://meyerweb.com/eric/tools/css/reset/
-*******************************************/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/****************
-*	COMMONS
-****************/
-body, html {
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 13px;
-    color: #40484f;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 1.46153846;
-    text-align: left;
-    webkit-text-size-adjust: 100%;
-}
-
-p {
-    display: block;
-    margin-bottom: 1.3em;
-}
-
-a {
-    color: #0095ff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0c65a5;
-    text-decoration: underline;
-}
-
-ul {
-    margin-top: 1rem;
-}
-
-li {
-    list-style-type: square;
-    list-style-position: outside;
-    margin-left: 1.3em;
-}
-
-h1 {
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 1.67rem;
-}
-
-h3 {
-    font-size: 1.27rem;
-}
-
-em {
-    color: #757575;
-}
-
-blockquote {
-    margin-bottom: 1em;
-}
-
-strong {
-    font-weight: 700;
-}
-
-/* main container */
-#resume {
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-/* every section wrapper */
-.section {
-    margin-bottom: 1rem;
-}
-
-section .location {
-    margin-right: .5em;
-    color: #606d76;
-    font-weight: 700;
-}
-
-#contact {
-    margin-top: .5rem;
-}
-
-#profiles .item {
-    padding: 0;
-}
-
-#header > #profiles,
-#header > #contact,
-#skills,
-#languages,
-#interests {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-}
-
-#header > div {
-    line-height: 1.5;
-}
-
-#header > div > div {
-    margin-right: 1.2em;
-}
-
-#header h1.name {
-    font-size: 2.8rem;
-    font-weight: 100;
-    line-height: 100%;
-}
-
-#header h2.label {
-    color: #202931;
-    font-size: 1.47rem;
-    font-weight: 300;
-}
-
-#header .picture {
-    width: 11em;
-    float: right;
-    border-radius: 4px;
-}
-
-.main-summary {
-    background: #f1f8ff;
-    padding: 1.2em 1em;
-    margin-top: 1rem;
-}
-
-.main-summary p {
-    margin: .15em 0 0;
-}
-
-h2.section-title {
-    display: inline-block;
-    background: #fff;
-    padding: 0 1em 0.3em 0;
-    color: #ff6d1f;
-    text-transform: uppercase;
-    font-weight: 600;
-    border: none;
-    font-size: .9rem;
-}
-
-.section > header {
-    position: relative;
-}
-
-.fa {
-    margin-right: 0.25em;
-}
-
-.section > header::after {
-    position: absolute;
-    left: 0;
-    top: .7em;
-    height: 1px;
-    background: #ccc;
-    content: "";
-    width: 100%;
-    z-index: -100;
-    display: block;
-}
-
-.section.main-summary > section {
-    margin: 0;
-}
-
-.section > section > header {
-    font-size: 1.38rem;
-    position: relative;
-    margin-top: .7em;
-}
-
-.section > section > header:first-of-type {
-    margin: 0;
-}
-
-.section > section > header .space-left {
-    position: absolute;
-    left: -1.56rem;
-    top: 5px;
-    color: #aaa;
-    line-height: 1;
-    opacity: 0;
-}
-
-.position,
-.company,
-.organization,
-.institution,
-.date,
-.area,
-.studyType,
-.title,
-.awarder {
-    display: inline-block;
-}
-
-.position,
-.studyType,
-.area,
-.title,
-.language,
-.name {
-    font-weight: 600;
-}
-
-.company::before,
-.institution::before,
-.organization::before,
-.awarder::before {
-    content: "at"
-}
-
-.company,
-.institution,
-.organization,
-.awarder {
-    color: #606d76;
-    font-weight: 400;
-}
-
-.section header .date {
-    font-size: 1rem;
-    display: block;
-    padding: .1em 0;
-    font-weight: 600;
-}
-
-ul.keywords,
-ul.courses {
-    margin-top: .5em;
-}
-
-ul.keywords li,
-ul.courses li {
-    display: inline-block;
-    margin: 2px 2px 2px 0;
-    padding: 4px 5px 5px;
-    font-size: .9rem;
-    line-height: 1;
-    text-transform: lowercase;
-    color: #3e6d8e;
-    background-color: #dfeaf1;
-    border: 0 solid #dfeaf1;
-    white-space: nowrap;
-}
-
-ul.keywords li:hover,
-ul.courses li:hover {
-    background: #dfeaf0;
-}
-
-.item {
-    padding: .5em 0;
-}
-
-.gpa {
-    padding-bottom: .5em;
-}
-
-.fa.social {
-    font-size: 1.1em;
-}
-
-/* Social Media Brand Colors */
-.google-plus {
-    color: #dd4b39;
-}
-
-.tumblr {
-    color: #32506d;
-}
-
-.foursquare {
-    color: #0072b1;
-}
-
-.facebook {
-    color: #3b5998;
-}
-
-.linkedin {
-    color: #007bb6;
-}
-
-.pinterest {
-    color: #cb2027;
-}
-
-.dribbble {
-    color: #ea4c89;
-}
-
-.instagram {
-    color: #517fa4;
-}
-
-.twitter {
-    color: #00aced;
-}
-
-.soundcloud {
-    color: #ff3a00;
-}
-
-.wordpress {
-    color: #21759b;
-}
-
-.youtube {
-    color: #bb0000;
-}
-
-.github {
-    color: #171515;
-}
-
-.stack-overflow {
-    color: #828386;
-    position: relative;
-}
-
-.flickr {
-    color: #ff0084;
-}
-
-.stack-overflow::after {
-    position: absolute;
-    left: 0;
-    content: '\f16c';
-    color: #f68a1f;
-    overflow: hidden;
-    height: 40%;
-}
-
-#languages .item,
-#skills .item,
-#interests .item {
-    width: 15em;
-    padding: 0 .5em .5em 0;
-    border-bottom: none;
-}
-
-#skills .item {
-    width: 16em;
-}
-
-#skills .item .keywords {
-    width: 15em;
-}
-
-/* Skill chart */
-.level {
-    margin-bottom: .5em;
-}
-
-.level .bar {
-    border: 1px solid #ddd;
-    display: block;
-    width: 10em;
-    height: 5px;
-    position: relative;
-}
-
-.level .bar::after {
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-    background: black;
-    height: 5px;
-}
-
-.level.beginner .bar::after {
-    background: #EB5F51;
-    width: 2.5em;
-}
-
-.level.intermediate .bar::after {
-    background: #ffdf1f;
-    width: 5em;
-}
-
-.level.advanced .bar::after,
-.level.fluent .bar::after {
-    background: #5CB85C;
-    width: 7.5em;
-}
-
-.level.master .bar::after,
-.level.native.speaker .bar::after {
-    background: #59C596;
-    width: 10em;
-}
-
-#references .item {
-    padding-left: .5em;
-    border-left: 5px solid #ff6d1f;
-}
-
-/******************
-*	HELPER CLASSES
-******************/
-
-.clear::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.display {
-    display: block;
-    opacity: 1 !important;
-}
-
-.margin1 {
-    margin-bottom: .5rem;
-}
-
-/****************
-*		TABLET
-****************/
-@media screen and (min-width: 602px) {
-    #resume {
-        width: 80%;
-        margin: 0 auto;
-    }
-}
-
-/****************
-*		LAPTOP
-****************/
-@media screen and (min-width: 1025px) {
-    li {
-        margin-left: 1.5em;
-    }
-
-    #resume {
-        width: 820px;
-        margin: 2rem auto;
-        opacity: 0;
-        -webkit-transition: opacity .5s ease-in-out;
-        transition: opacity .5s ease-in-out;
-    }
-
-    .section > section > header .space-left {
-        opacity: 1;
-        cursor: pointer;
-    }
-
-    .section > section {
-        margin-left: 1.67rem;
-    }
-
-    .company::before,
-    .institution::before,
-    .organization::before,
-    .awarder::before {
-        content: "|";
-    }
-
-    .header-left {
-        float: left;
-        width: 70%;
-        word-break: break-all;
-    }
-
-    .section header .date {
-        float: right;
-        padding: .2em;
-    }
-
-    .display {
-        display: none;
-    }
-
-    .display:not(.none) {
-        display: block;
-    }
-
-}
-
-@media print {
-
-    #resume {
-        margin: 0;
-        padding: 0;
-        -ms-word-wrap: break-word;
-        word-wrap: break-word;
-        line-height: 1.3;
-        /*font-family: Arial, Georgia, "Lucida Grande", sans-serif;*/
-    }
-
-    @page {
-        margin: 1cm 1.4cm;
-    }
-
-    .item-count {
-        display: none;
-    }
-
-    .company::before,
-    .institution::before,
-    .organization::before,
-    .awarder::before {
-        content: "at";
-    }
-
-    .main-summary {
-        padding: 2rem 0;
-    }
-
-    .section {
-        margin: .8rem 0;
-        padding: 0;
-    }
-
-    .section header {
-        padding-bottom: .15rem;
-    }
-
-    .section .location {
-        padding-bottom: .15rem;
-    }
-    .stack-overflow::after {
-        content: "";
-    }
-
-    .fa.social {
-        color: #828386;
-    }
-
-    ul {
-        margin-top: .4em;
-    }
-
-    ul, li {
-        padding: 0;
-    }
-
-    ul.keywords li,
-    ul.courses li {
-        margin: 0;
-        padding: 0;
-        font-size: .8rem;
-        text-transform: lowercase;
-    }
-
-    ul.keywords li::after,
-    ul.courses li::after {
-        padding: 0 0 0 .1rem;
-        content: " |";
-    }
-
-    ul.keywords::before,
-    ul.courses::before {
-        font-size: .8rem;
-        font-weight: 600;
-    }
-
-    ul.keywords::before {
-        content: "Skills acquired: ";
-    }
-
-    #skills .keywords::before {
-        content: '';
-    }
-
-    .section p {
-        margin: 0;
-        padding: 0;
-    }
-
-    ul.courses::before {
-        content: "Major courses: ";
-    }
-
-    ul.keywords li:last-of-type::after,
-    ul.courses li:last-of-type::after {
-        content: "";
-    }
-
-    .level em {
-        font-style: normal;
-        padding: .1em 0;
-    }
-
-    .level .bar {
-        display: none;
-    }
-
-    #profiles .item {
-        padding: 0;
-    }
-
-    .item.display {
-        display: block;
-        opacity: 1 !important;
-    }
-}
-
-		</style>
-	</head>
-
-	<body>
-		<div id="resume">
-				<header id="header" class="clear">
-						<img class="picture" src="https://avatars2.githubusercontent.com/u/4589389?v&#x3D;3&amp;s&#x3D;460" alt="Shaughn Finnerty"/>
-						<div class="middle">
-							<h1 class="name">Shaughn Finnerty</h1>
-							<h2 class="label">Software Developer</h2>
-						</div>
-
-						<span class="location">
-						</span>
-
-					<div id="contact">
-						<div class="website">
-              <span class="fa fa-external-link"></span>
-							<a target="_blank" href="http://shaughn.net">http://shaughn.net</a>
-						</div>
-						<div class="email">
-              <span class="fa fa-envelope-o"></span>
-							<a href="/cdn-cgi/l/email-protection#413229203426292f6f27282f2f2433353801262c20282d6f222e2c"><span class="__cf_email__" data-cfemail="47342f2632202f2969212e29292235333e07202a262e2b6924282a">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a>
-						</div>
-						<div class="phone">
-              <span class="fa fa-mobile"></span>
-							(613) 585-8175
-						</div>
-					</div>
-
-					<div id="profiles">
-						<div class="item">
-								<div class="username">
-									<span class="fa fa-github github social"></span>
-									<span class="url">
-										<a href="https://github.com/finnergizer">finnergizer</a>
-									</span>
-								</div>
-						</div>
-					</div>
-				</header>
-
-					<section class="section main-summary">
-						<section>
-							<div><p>I am a new grad Computer Science student from the University of Ottawa with a passion to explore all things tech. As a full time software developer at Klipfolio, most of my development involves backend efforts around security, integration with other cloud services, and various other features. Additionally, I am currently pursuing a Master's Degree in Computer Science at the University of Ottawa in the evening, focussing my studies on machine learning and all of it's exciting discoveries. I enjoy experimenting and prototyping new technologies, and any opportunity to learn new trends emerging in the vast world of software and web development. When I am not behind a keyboard coding, reading about the newest technology, or studying, I enjoy spending time outside hunting, fishing, wakeboarding, and snowboarding.</p></div>
-						</section>
-					</section>
-
-				<section class="section margin1">
-					<header>
-						<h2 class='section-title'>Skills</h2>
-					</header>
-					<section id="skills">
-						<div class="item">
-							<h3 class="name">
-								Very Comfortable
-							</h3>
-							<ul class="keywords">
-								<li>Java</li>
-								<li>Python</li>
-								<li>HTML &amp; CSS</li>
-								<li>SQL</li>
-								<li>Grails</li>
-								<li>OAuth</li>
-							</ul>
-						</div>
-						<div class="item">
-							<h3 class="name">
-								Proficient
-							</h3>
-							<ul class="keywords">
-								<li>Groovy</li>
-								<li>JavaScript &amp; jQuery</li>
-								<li>Angular</li>
-								<li>C++</li>
-								<li>Scikit-learn</li>
-								<li>NumPy/SciPy</li>
-								<li>OpenCV</li>
-								<li>Node.js</li>
-								<li>Sails.js</li>
-								<li>Jekyll</li>
-							</ul>
-						</div>
-						<div class="item">
-							<h3 class="name">
-								Prior Experience
-							</h3>
-							<ul class="keywords">
-								<li>C</li>
-								<li>Weka</li>
-								<li>Dojo Toolkit</li>
-								<li>Ruby/Rails</li>
-								<li>Mockito</li>
-								<li>React</li>
-								<li>Hadoop</li>
-								<li>MapReduce</li>
-							</ul>
-						</div>
-					</section>
-				</section>
-
-				<section class="section">
-					<header>
-						<h2 class='section-title'>Work Experience <span class="item-count">(6)</span></h2>
-					</header>
-					<section id="work">
-								<header>
-									<span class="space-left">
-											<span class="fa fa-caret-down"></span>
-									</span>
-									<div class="position">
-										Software Developer
-									</div>
-									<div class="company">
-										Klipfolio
-									</div>
-									<div class="date">
-										<span class="startDate">
-											May 2015
-										</span>
-										<span class="endDate">
-											- Current
-										</span>
-									</div>
-								</header>
-
-                                <span class="website">
-                                    <a href="http://www.klipfolio.com">http://www.klipfolio.com</a>
-                                </span>
-
-
-								<div class="item display" style="opacity:1">
-									<div class="summary">
-										<p><p>Klipfolio is an online dashboard platform for building powerful real-time business dashboards for your team or your clients.</p></p>
-									</div>
-									<ul class="highlights">
-											<li>Implemented and migrated an encryption strategy for protecting critical information stored for our users</li>
-											<li>Unit testing with TestNG, JUnit, Mockito</li>
-											<li>Back-end development with Java/Groovy to create custom OAuth integrations with third party APIs like Basecamp, Shopify, iFormBuilder</li>
-											<li>Created a helper API that end users could employ to add hash based authentication parameters to their external API requests to retrieve data</li>
-											<li>Extensive work with RESTful APIs</li>
-											<li>Participate in bi-weekly demos of new features to support, sales, marketing, QA</li>
-									</ul>
-							</div>
-								<header>
-									<span class="space-left">
-											<span class="fa fa-caret-right"></span>
-									</span>
-									<div class="position">
-										Co-op Software Developer
-									</div>
-									<div class="company">
-										Department of Defense
-									</div>
-									<div class="date">
-										<span class="startDate">
-											September 2014
-										</span>
-										<span class="endDate">
-											- December 2014
-										</span>
-									</div>
-								</header>
-
-
-
-								<div class="item display none" style="opacity:0">
-									<ul class="highlights">
-											<li>Developed a mapping web app using Java, Esri JavaScript API, Dojo, jQuery</li>
-											<li>Redesigned Java-based Oracle database syncing/transfer services with Python, lxml, PyCrypto</li>
-											<li>Prototyped a native Android app using Esri Android SDK and Java</li>
-									</ul>
-							</div>
-								<header>
-									<span class="space-left">
-											<span class="fa fa-caret-right"></span>
-									</span>
-									<div class="position">
-										Co-op Software Developer
-									</div>
-									<div class="company">
-										NetFore Systems
-									</div>
-									<div class="date">
-										<span class="startDate">
-											May 2014
-										</span>
-										<span class="endDate">
-											- August 2014
-										</span>
-									</div>
-								</header>
-
-                                <span class="website">
-                                    <a href="http://netfore.com/">http://netfore.com/</a>
-                                </span>
-
-
-								<div class="item display none" style="opacity:0">
-									<div class="summary">
-										<p><p>NetFore Systems is a software development and technology consulting group combining deep technology experience with a high-touch approach to help their customers reach their business goals faster.</p></p>
-									</div>
-									<ul class="highlights">
-											<li>Contributing agile team member for a web app using Grails &amp; Groovy</li>
-											<li>Implemented wireframes using Bootstrap, FooTables, FontAwesome</li>
-											<li>Developed back-end geocoding using Google Maps &amp; Address Doctor APIs</li>
-									</ul>
-							</div>
-								<header>
-									<span class="space-left">
-											<span class="fa fa-caret-right"></span>
-									</span>
-									<div class="position">
-										Co-op Software Developer
-									</div>
-									<div class="company">
-										Versaterm
-									</div>
-									<div class="date">
-										<span class="startDate">
-											May 2013
-										</span>
-										<span class="endDate">
-											- August 2013
-										</span>
-									</div>
-								</header>
-
-                                <span class="website">
-                                    <a href="http://www.versaterm.com">http://www.versaterm.com</a>
-                                </span>
-
-
-								<div class="item display none" style="opacity:0">
-									<div class="summary">
-										<p><p>Versaterm delivers Records, Computer Aided Dispatch, and Mobile systems to public safety clients</p></p>
-									</div>
-									<ul class="highlights">
-											<li>Developed an HTML5 status screen for reporting to public safety officials using CSS, JavaScript/JQuery, Four Js Genero</li>
-											<li>Planned &amp; presented technical demo for app summary to 50+ colleagues</li>
-											<li>Coded in Vim editor on Red Hat Linux Server</li>
-									</ul>
-							</div>
-								<header>
-									<span class="space-left">
-											<span class="fa fa-caret-right"></span>
-									</span>
-									<div class="position">
-										Creator
-									</div>
-									<div class="company">
-										Behave
-									</div>
-									<div class="date">
-										<span class="startDate">
-											October 2014
-										</span>
-										<span class="endDate">
-											- Current
-										</span>
-									</div>
-								</header>
-
-                                <span class="website">
-                                    <a href="http://behaveapp.me">http://behaveapp.me</a>
-                                </span>
-
-
-								<div class="item display none" style="opacity:0">
-									<div class="summary">
-										<p><p>A classroom and behavior management web application for teachers. This is a personal project I started to practice new web technologies.</p></p>
-									</div>
-									<ul class="highlights">
-											<li>Created a Node.js backend utilizing Sails.js MVC framework to create a RESTful API with Access Control List policies and user authentication with Passport.js.</li>
-											<li>Designed a front-end single page application to communicate with the RESTful API backend using Angular.js </li>
-									</ul>
-							</div>
-								<header>
-									<span class="space-left">
-											<span class="fa fa-caret-right"></span>
-									</span>
-									<div class="position">
-										Open Source Contributor
-									</div>
-									<div class="company">
-										Markus
-									</div>
-									<div class="date">
-										<span class="startDate">
-											September 2015
-										</span>
-										<span class="endDate">
-											- Current
-										</span>
-									</div>
-								</header>
-
-                                <span class="website">
-                                    <a href="http://markusproject.org/">http://markusproject.org/</a>
-                                </span>
-
-
-								<div class="item display none" style="opacity:0">
-									<div class="summary">
-										<p><p>MarkUs (pronounced "mark us") is an open-source tool which recreates the ease and flexibility of grading assignments with pen on paper, within a web application. </p></p>
-									</div>
-									<ul class="highlights">
-											<li>Contributor to the open source repository on GitHub for the Ruby on Rails app</li>
-											<li>Provided Ruby scripts to check for consistent code style when committing</li>
-											<li>Participated in a code sprint at UBC in Vancouver with other contributors</li>
-									</ul>
-							</div>
-					</section>
-				</section>
-
-				<section class="section">
-					<header>
-						<h2 class='section-title'>Volunteer</h2>
-					</header>
-					<section id="volunteer">
-								<header class="clear">
-									<span class="space-left">
-											<span class="fa fa-caret-down"></span>
-									</span>
-									<div class="header-left">
-											<div class="position">
-												Laborer
-											</div>
-										<div class="organization">
-											Oneness
-										</div>
-									</div>
-									<div class="date">
-										<span class="startDate">
-											January 2010
-										</span>
-										<span class="endDate">
-											- May 2012
-										</span>
-									</div>
-								</header>
-
-
-
-								<div class="item display" style="opacity:1">
-									<div class="summary">
-										<p><p>Oneness is an organization of Canadians and Guatemalans working together to improve educational opportunities.</p></p>
-									</div>
-									<div class="website">
-										<a href="http://www.oneness.ca/home/">http://www.oneness.ca/home/</a>
-									</div>
-									<ul class="highlights">
-											<li>Organized fundraising initiatives to bring basic items to families in Guatamela</li>
-											<li>Installed cement floors in houses with dirt floors</li>
-											<li>Assisted in building a local feeding/community centre</li>
-											<li>Presented at various schools in my own hometown to share my experiences</li>
-									</ul>
-							</div>
-					</section>
-				</section>
-
-				<section class="section">
-					<header>
-						<h2 class='section-title'>Education <span class="item-count">(2)</span></h2>
-					</header>
-					<section id="education">
-							<header class="clear">
-								<span class="space-left">
-										<span class="fa fa-caret-down"></span>
-								</span>
-								<div class="header-left">
-										<div class="studyType">
-											Master&#x27;s Degree
-										</div>
-										<div class="area">
-											Computer Science
-										</div>
-										<div class="institution">
-											University of Ottawa
-										</div>
-								</div>
-								<div class="date">
-									<span class="startDate">
-										2016
-									</span>
-									<span class="endDate">
-										- Current
-									</span>
-								</div>
-							</header>
-
-
-                <ul class="courses">
-                    <li>CSI5149 - Probabilistic Graphical Models</li>
-                    <li>CSI5389 - Electronic Commerce Technologies</li>
-                    <li>CSI7163 - Advanced Topics in Computer Systems (Multimedia Communications)</li>
-                </ul>
-
-								<div class="item display" style="opacity:1">
-									<div class='gpa'>
-										<strong> Grade:</strong> <span>9.7/10</span>
-									</div>
-									<div class="summary">
-										<p><p>Part-time student in the accelerated master's program. Focussing my studies on machine learning, particularly classification tasks and recommender systems. </p><p>Two courses remaining.</p></p>
-									</div>
-							</div>
-							<header class="clear">
-								<span class="space-left">
-										<span class="fa fa-caret-right"></span>
-								</span>
-								<div class="header-left">
-										<div class="studyType">
-											Bachelor&#x27;s Degree
-										</div>
-										<div class="area">
-											Computer Science
-										</div>
-										<div class="institution">
-											University of Ottawa
-										</div>
-								</div>
-								<div class="date">
-									<span class="startDate">
-										2011
-									</span>
-									<span class="endDate">
-										- 2015
-									</span>
-								</div>
-							</header>
-
-
-
-								<div class="item display none" style="opacity:0">
-									<div class='gpa'>
-										<strong> Grade:</strong> <span>9.4/10 Cumulative GPA, 9.9/10 Diploma Grade Point Average</span>
-									</div>
-									<div class="summary">
-										<p><p>Awarded the Faculty of Engineering plaque for the highest standing in the bachelor in computer science.</p></p>
-									</div>
-							</div>
-					</section>
-				</section>
-
-				<section class="section">
-					<header>
-						<h2 class='section-title'>Awards</h2>
-					</header>
-					<section id="awards">
-						<header class="clear">
-							<span class="space-left">
-									<span class="fa fa-caret-down"></span>
-							</span>
-							<div class="header-left">
-									<div class="title">
-										Faculty of Engineering Plaque in Computer Science
-									</div>
-									<div class="awarder">
-										Univeristy of Ottawa
-									</div>
-							</div>
-								<div class="date">
-									2016
-								</div>
-						</header>
-							<div class="item display" style="opacity:1">
-								<div class="summary">
-									<p><p>The Faculty of Engineering plaque for the highest standing in the bachelor in computer science.</p></p>
-								</div>
-						</div>
-						<header class="clear">
-							<span class="space-left">
-									<span class="fa fa-caret-right"></span>
-							</span>
-							<div class="header-left">
-									<div class="title">
-										Chancellor Scholarship Finalist
-									</div>
-									<div class="awarder">
-										Univeristy of Ottawa
-									</div>
-							</div>
-								<div class="date">
-									2011
-								</div>
-						</header>
-							<div class="item display none" style="opacity:0">
-								<div class="summary">
-									<p><p>Students with greater than 92% entering average demonstrating leadership qualities and a commitment to academic and extracurricular activities.</p></p>
-								</div>
-						</div>
-						<header class="clear">
-							<span class="space-left">
-									<span class="fa fa-caret-right"></span>
-							</span>
-							<div class="header-left">
-									<div class="title">
-										Nortel Networks Admission Scholarship
-									</div>
-									<div class="awarder">
-										Univeristy of Ottawa
-									</div>
-							</div>
-								<div class="date">
-									2011
-								</div>
-						</header>
-							<div class="item display none" style="opacity:0">
-								<div class="summary">
-									<p><p>Greater than 95% entering average.</p></p>
-								</div>
-						</div>
-						<header class="clear">
-							<span class="space-left">
-									<span class="fa fa-caret-right"></span>
-							</span>
-							<div class="header-left">
-									<div class="title">
-										Merit scholarship
-									</div>
-									<div class="awarder">
-										Univeristy of Ottawa
-									</div>
-							</div>
-						</header>
-							<div class="item display none" style="opacity:0">
-								<div class="summary">
-									<p><p>Outstanding academic success in previous academic year.</p></p>
-								</div>
-						</div>
-					</section>
-				</section>
-
-
-
-				<section class="section margin1">
-					<header>
-						<h2 class='section-title' class='section-title'>Interests</h2>
-					</header>
-					<section id="interests">
-							<div class="item">
-									<h3 class="name">
-										Machine Learning
-									</h3>
-									<ul class="keywords">
-											<li>Recommender systems</li>
-											<li>Text classification</li>
-									</ul>
-							</div>
-							<div class="item">
-									<h3 class="name">
-										Software Engineering
-									</h3>
-									<ul class="keywords">
-											<li>Design patterns</li>
-											<li>Agile development</li>
-									</ul>
-							</div>
-							<div class="item">
-									<h3 class="name">
-										Networking
-									</h3>
-									<ul class="keywords">
-											<li>Home theatre PCs</li>
-											<li>Home automation</li>
-									</ul>
-							</div>
-							<div class="item">
-									<h3 class="name">
-										Hobbies
-									</h3>
-									<ul class="keywords">
-											<li>Hunting &amp; Fishing</li>
-											<li>Wakeboarding &amp; Snowboarding</li>
-											<li>Music/Guitar</li>
-									</ul>
-							</div>
-					</section>
-				</section>
-
-		</div>
-		<script>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<title>Shaughn Finnerty</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+<style>html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}table{border-collapse:collapse;border-spacing:0;}body,html{font-family:"Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-size:13px;color:#40484f;font-weight:400;letter-spacing:0;line-height:1.46153846;text-align:left;webkit-text-size-adjust:100%;}p{display:block;margin-bottom:1.3em;}a{color:#0095ff;text-decoration:none;}a:hover{color:#0c65a5;text-decoration:underline;}ul{margin-top:1rem;}li{list-style-type:square;list-style-position:outside;margin-left:1.3em;}h1{font-size:2rem;}h2{font-size:1.67rem;}h3{font-size:1.27rem;}em{color:#757575;}blockquote{margin-bottom:1em;}strong{font-weight:700;}#resume{padding:1rem;margin-top:2rem;}.section{margin-bottom:1rem;}section .location{margin-right:.5em;color:#606d76;font-weight:700;}#contact{margin-top:.5rem;}#profiles .item{padding:0;}#header>#profiles,#header>#contact,#skills,#languages,#interests{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-flow:row wrap;flex-flow:row wrap;-webkit-justify-content:flex-start;justify-content:flex-start;}#header>div{line-height:1.5;}#header>div>div{margin-right:1.2em;}#header h1.name{font-size:2.8rem;font-weight:100;line-height:100%;}#header h2.label{color:#202931;font-size:1.47rem;font-weight:300;}#header .picture{width:11em;float:right;border-radius:4px;}.main-summary{background:#f1f8ff;padding:1.2em 1em;margin-top:1rem;}.main-summary p{margin:.15em 0 0;}h2.section-title{display:inline-block;background:#fff;padding:0 1em 0.3em 0;color:#ff6d1f;text-transform:uppercase;font-weight:600;border:none;font-size:.9rem;}.section>header{position:relative;}.fa{margin-right:0.25em;}.section>header::after{position:absolute;left:0;top:.7em;height:1px;background:#ccc;content:"";width:100%;z-index:-100;display:block;}.section.main-summary>section{margin:0;}.section>section>header{font-size:1.38rem;position:relative;margin-top:.7em;}.section>section>header:first-of-type{margin:0;}.section>section>header .space-left{position:absolute;left:-1.56rem;top:5px;color:#aaa;line-height:1;opacity:0;}.position,.company,.organization,.institution,.date,.area,.studyType,.title,.awarder{display:inline-block;}.position,.studyType,.area,.title,.language,.name{font-weight:600;}.company::before,.institution::before,.organization::before,.awarder::before{content:"at "}.company,.institution,.organization,.awarder{color:#606d76;font-weight:400;}.section header .date{font-size:1rem;display:block;padding:.1em 0;font-weight:600;}ul.keywords,ul.courses{margin-top:.5em;}ul.keywords li,ul.courses li{display:inline-block;margin:2px 2px 2px 0;padding:4px 5px 5px;font-size:.9rem;line-height:1;text-transform:lowercase;color:#3e6d8e;background-color:#dfeaf1;border:0 solid #dfeaf1;white-space:nowrap;}ul.keywords li:hover,ul.courses li:hover{background:#dfeaf0;}.item{padding:.5em 0;}.gpa{padding-bottom:.5em;}.fa.social{font-size:1.1em;}.google-plus{color:#dd4b39;}.tumblr{color:#32506d;}.foursquare{color:#0072b1;}.facebook{color:#3b5998;}.linkedin{color:#007bb6;}.pinterest{color:#cb2027;}.dribbble{color:#ea4c89;}.instagram{color:#517fa4;}.twitter{color:#00aced;}.soundcloud{color:#ff3a00;}.wordpress{color:#21759b;}.youtube{color:#bb0000;}.github{color:#171515;}.stack-overflow{color:#828386;position:relative;}.flickr{color:#ff0084;}.stack-overflow::after{position:absolute;left:0;content:'\f16c';color:#f68a1f;overflow:hidden;height:40%;}#languages .item,#skills .item,#interests .item{width:15em;padding:0 .5em .5em 0;border-bottom:none;}#skills .item{width:16em;}#skills .item .keywords{width:15em;}.level{margin-bottom:.5em;}.level .bar{border:1px solid #ddd;display:block;width:10em;height:5px;position:relative;}.level .bar::after{position:absolute;content:" ";top:0;left:0;background:black;height:5px;}.level.beginner .bar::after{background:#EB5F51;width:2.5em;}.level.intermediate .bar::after{background:#ffdf1f;width:5em;}.level.advanced .bar::after,.level.fluent .bar::after{background:#5CB85C;width:7.5em;}.level.master .bar::after,.level.native.speaker .bar::after{background:#59C596;width:10em;}#references .item{padding-left:.5em;border-left:5px solid #ff6d1f;}.clear::after{content:"";display:table;clear:both;}.display{display:block;opacity:1!important;}.margin1{margin-bottom:.5rem;}@media screen and (min-width: 602px) {#resume{width:80%;margin:0 auto;}}@media screen and (min-width: 1025px) {li{margin-left:1.5em;}#resume{width:820px;margin:2rem auto;opacity:0;-webkit-transition:opacity .5s ease-in-out;transition:opacity .5s ease-in-out;}.section>section>header .space-left{opacity:1;cursor:pointer;}.section>section{margin-left:1.67rem;}.company::before,.institution::before,.organization::before,.awarder::before{content:"| ";}.header-left{float:left;width:70%;word-break:normal;}.section header .date{float:right;padding:.2em;}.display{display:none;}.display:not(.none){display:block;}}@media print {#resume{margin:0;padding:0;-ms-word-wrap:break-word;word-wrap:break-word;line-height:1.3;}@page{margin:1cm 1.4cm;}.item-count{display:none;}.company::before,.institution::before,.organization::before,.awarder::before{content:"at ";}.main-summary{padding:2rem 0;}.section{margin:.8rem 0;padding:0;}.section header{padding-bottom:.15rem;}.section .location{padding-bottom:.15rem;}.stack-overflow::after{content:"";}.fa.social{color:#828386;}ul{margin-top:.4em;}ul,li{padding:0;}ul.keywords li,ul.courses li{margin:0;padding:0;font-size:.8rem;text-transform:lowercase;}ul.keywords li::after,ul.courses li::after{padding:0 0 0 .1rem;content:" |";}ul.keywords::before,ul.courses::before{font-size:.8rem;font-weight:600;}ul.keywords::before{content:"Skills acquired: ";}#skills .keywords::before{content:'';}.section p{margin:0;padding:0;}ul.courses::before{content:"Major courses: ";}ul.keywords li:last-of-type::after,ul.courses li:last-of-type::after{content:"";}.level em{font-style:normal;padding:.1em 0;}.level .bar{display:none;}#profiles .item{padding:0;}.item.display{display:block;opacity:1!important;}}</style>
+</head>
+<body>
+<div id="resume">
+<header id="header" class="clear">
+<img class="picture" src="https://avatars2.githubusercontent.com/u/4589389?v&#x3D;3&amp;s&#x3D;460" alt="Shaughn Finnerty"/>
+<div class="middle">
+<h1 class="name">Shaughn Finnerty</h1>
+<h2 class="label">Software Developer</h2>
+</div>
+<span class="location">
+</span>
+<div id="contact">
+<div class="website">
+<span class="fa fa-external-link"></span>
+<a target="_blank" href="http://shaughn.net">http://shaughn.net</a>
+</div>
+<div class="email">
+<span class="fa fa-envelope-o"></span>
+<a href="/cdn-cgi/l/email-protection#03706b6276646b6d2d656a6d6d6671777a43646e626a6f2d606c6e"><span class="__cf_email__" data-cfemail="e99a81889c8e8187c78f8087878c9b9d90a98e84888085c78a8684">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a>
+</div>
+<div class="phone">
+<span class="fa fa-mobile"></span>
+(613) 585-8175
+</div>
+</div>
+<div id="profiles">
+<div class="item">
+<div class="username">
+<span class="fa fa-github github social"></span>
+<span class="url">
+<a href="https://github.com/finnergizer">finnergizer</a>
+</span>
+</div>
+</div>
+<div class="item">
+<div class="username">
+<span class="fa fa-linkedin linkedin social"></span>
+<span class="url">
+<a href="https://www.linkedin.com/in/shaughn-finnerty-604341ba">Shaughn Finnerty</a>
+</span>
+</div>
+</div>
+</div>
+</header>
+<section class="section main-summary">
+<section>
+<div><p>I am a new grad Computer Science student from the University of Ottawa with a passion to explore all things tech. As a full time software developer at Klipfolio, most of my development involves backend efforts around security, integration with other cloud services, and various other features. Additionally, I am currently pursuing a Master's Degree in Computer Science at the University of Ottawa in the evening, focussing my studies on machine learning and all of its exciting discoveries. I enjoy experimenting and prototyping new technologies, and any opportunity to learn new trends emerging in the vast world of software and web development. When I am not behind a keyboard coding, reading about the newest technology, or studying, I enjoy spending time outside hunting, fishing, wakeboarding, and snowboarding.</p></div>
+</section>
+</section>
+<section class="section margin1">
+<header>
+<h2 class='section-title'>Skills</h2>
+</header>
+<section id="skills">
+<div class="item">
+<h3 class="name">
+Very Comfortable
+</h3>
+<ul class="keywords">
+<li>Java</li>
+<li>Python</li>
+<li>HTML &amp; CSS</li>
+<li>SQL</li>
+<li>Grails</li>
+<li>OAuth</li>
+</ul>
+</div>
+<div class="item">
+<h3 class="name">
+Proficient
+</h3>
+<ul class="keywords">
+<li>Groovy</li>
+<li>JavaScript &amp; jQuery</li>
+<li>Akka</li>
+<li>React.js</li>
+<li>Angular</li>
+<li>C++</li>
+<li>Scikit-learn</li>
+<li>NumPy/SciPy</li>
+<li>OpenCV</li>
+<li>Node.js</li>
+<li>Sails.js</li>
+<li>Jekyll</li>
+</ul>
+</div>
+<div class="item">
+<h3 class="name">
+Prior Experience
+</h3>
+<ul class="keywords">
+<li>C</li>
+<li>Weka</li>
+<li>Dojo Toolkit</li>
+<li>Ruby/Rails</li>
+<li>Mockito</li>
+<li>React</li>
+<li>Hadoop</li>
+<li>MapReduce</li>
+</ul>
+</div>
+</section>
+</section>
+<section class="section">
+<header>
+<h2 class='section-title'>Work Experience <span class="item-count">(6)</span></h2>
+</header>
+<section id="work">
+<header>
+<span class="space-left">
+<span class="fa fa-caret-down"></span>
+</span>
+<div class="position">
+Software Developer
+</div>
+<div class="company">
+Klipfolio
+</div>
+<div class="date">
+<span class="startDate">
+May 2015
+</span>
+<span class="endDate">
+- Current
+</span>
+</div>
+</header>
+<span class="website">
+<a href="http://www.klipfolio.com">http://www.klipfolio.com</a>
+</span>
+<div class="item display" style="opacity:1">
+<div class="summary">
+<p><p>Klipfolio is an online dashboard platform for building powerful real-time business dashboards for your team or your clients.</p></p>
+</div>
+<ul class="highlights">
+<li>Designed component-based UIs with React, using both AMD and Common JS modular design</li>
+<li>Created a distributed, message-passing Akka microservice API for retrieving third-party data using OAuth, JDBC, SFTP</li>
+<li>Implemented and migrated an encryption strategy for protecting critical information stored for our users</li>
+<li>Unit testing with TestNG, JUnit, Mockito</li>
+<li>Back-end development with Java/Groovy to create custom OAuth integrations with third party APIs like Basecamp, Shopify, iFormBuilder</li>
+<li>Created a helper API that end users could employ to add hash based authentication parameters to their external API requests to retrieve data</li>
+<li>Extensive work with RESTful APIs</li>
+<li>Participate in bi-weekly demos of new features to support, sales, marketing, QA</li>
+</ul>
+</div>
+<header>
+<span class="space-left">
+<span class="fa fa-caret-right"></span>
+</span>
+<div class="position">
+Co-op Software Developer
+</div>
+<div class="company">
+Department of Defense
+</div>
+<div class="date">
+<span class="startDate">
+September 2014
+</span>
+<span class="endDate">
+- December 2014
+</span>
+</div>
+</header>
+<div class="item display none" style="opacity:0">
+<ul class="highlights">
+<li>Developed a mapping web app using Java, Esri JavaScript API, Dojo, jQuery</li>
+<li>Redesigned Java-based Oracle database syncing/transfer services with Python, lxml, PyCrypto</li>
+<li>Prototyped a native Android app using Esri Android SDK and Java</li>
+</ul>
+</div>
+<header>
+<span class="space-left">
+<span class="fa fa-caret-right"></span>
+</span>
+<div class="position">
+Co-op Software Developer
+</div>
+<div class="company">
+NetFore Systems
+</div>
+<div class="date">
+<span class="startDate">
+May 2014
+</span>
+<span class="endDate">
+- August 2014
+</span>
+</div>
+</header>
+<span class="website">
+<a href="http://netfore.com/">http://netfore.com/</a>
+</span>
+<div class="item display none" style="opacity:0">
+<div class="summary">
+<p><p>NetFore Systems is a software development and technology consulting group combining deep technology experience with a high-touch approach to help their customers reach their business goals faster.</p></p>
+</div>
+<ul class="highlights">
+<li>Contributing agile team member for a web app using Grails &amp; Groovy</li>
+<li>Implemented wireframes using Bootstrap, FooTables, FontAwesome</li>
+<li>Developed back-end geocoding using Google Maps &amp; Address Doctor APIs</li>
+</ul>
+</div>
+<header>
+<span class="space-left">
+<span class="fa fa-caret-right"></span>
+</span>
+<div class="position">
+Co-op Software Developer
+</div>
+<div class="company">
+Versaterm
+</div>
+<div class="date">
+<span class="startDate">
+May 2013
+</span>
+<span class="endDate">
+- August 2013
+</span>
+</div>
+</header>
+<span class="website">
+<a href="http://www.versaterm.com">http://www.versaterm.com</a>
+</span>
+<div class="item display none" style="opacity:0">
+<div class="summary">
+<p><p>Versaterm delivers Records, Computer Aided Dispatch, and Mobile systems to public safety clients</p></p>
+</div>
+<ul class="highlights">
+<li>Developed an HTML5 status screen for reporting to public safety officials using CSS, JavaScript/JQuery, Four Js Genero</li>
+<li>Planned &amp; presented technical demo for app summary to 50+ colleagues</li>
+<li>Coded in Vim editor on Red Hat Linux Server</li>
+</ul>
+</div>
+<header>
+<span class="space-left">
+<span class="fa fa-caret-right"></span>
+</span>
+<div class="position">
+Creator
+</div>
+<div class="company">
+Behave
+</div>
+<div class="date">
+<span class="startDate">
+October 2014
+</span>
+<span class="endDate">
+- Current
+</span>
+</div>
+</header>
+<span class="website">
+<a href="http://behaveapp.me">http://behaveapp.me</a>
+</span>
+<div class="item display none" style="opacity:0">
+<div class="summary">
+<p><p>A classroom and behavior management web application for teachers. This is a personal project I started to practice new web technologies.</p></p>
+</div>
+<ul class="highlights">
+<li>Created a Node.js backend utilizing Sails.js MVC framework to create a RESTful API with Access Control List policies and user authentication with Passport.js.</li>
+<li>Designed a front-end single page application to communicate with the RESTful API backend using Angular.js </li>
+</ul>
+</div>
+<header>
+<span class="space-left">
+<span class="fa fa-caret-right"></span>
+</span>
+<div class="position">
+Open Source Contributor
+</div>
+<div class="company">
+Markus
+</div>
+<div class="date">
+<span class="startDate">
+September 2015
+</span>
+<span class="endDate">
+- Current
+</span>
+</div>
+</header>
+<span class="website">
+<a href="http://markusproject.org/">http://markusproject.org/</a>
+</span>
+<div class="item display none" style="opacity:0">
+<div class="summary">
+<p><p>MarkUs (pronounced "mark us") is an open-source tool which recreates the ease and flexibility of grading assignments with pen on paper, within a web application. </p></p>
+</div>
+<ul class="highlights">
+<li>Contributor to the open source repository on GitHub for the Ruby on Rails app</li>
+<li>Provided Ruby scripts to check for consistent code style when committing</li>
+<li>Created metrics and visualizations to report on TA activity (i.e. grades assigned, comments made) for instructor reference</li>
+<li>Participated in a code sprint at UBC in Vancouver with other contributors</li>
+</ul>
+</div>
+</section>
+</section>
+<section class="section">
+<header>
+<h2 class='section-title'>Volunteer</h2>
+</header>
+<section id="volunteer">
+<header class="clear">
+<span class="space-left">
+<span class="fa fa-caret-down"></span>
+</span>
+<div class="header-left">
+<div class="position">
+Laborer
+</div>
+<div class="organization">
+Oneness
+</div>
+</div>
+<div class="date">
+<span class="startDate">
+January 2010
+</span>
+<span class="endDate">
+- May 2012
+</span>
+</div>
+</header>
+<div class="item display" style="opacity:1">
+<div class="summary">
+<p><p>Oneness is an organization of Canadians and Guatemalans working together to improve educational opportunities.</p></p>
+</div>
+<div class="website">
+<a href="http://www.oneness.ca/home/">http://www.oneness.ca/home/</a>
+</div>
+<ul class="highlights">
+<li>Organized fundraising initiatives to bring basic items to families in Guatamela</li>
+<li>Installed cement floors in houses with dirt floors</li>
+<li>Assisted in building a local feeding/community centre</li>
+<li>Presented at various schools in my own hometown to share my experiences</li>
+</ul>
+</div>
+</section>
+</section>
+<section class="section">
+<header>
+<h2 class='section-title'>Education <span class="item-count">(2)</span></h2>
+</header>
+<section id="education">
+<header class="clear">
+<span class="space-left">
+<span class="fa fa-caret-down"></span>
+</span>
+<div class="header-left">
+<div class="studyType">
+Master&#x27;s Degree
+</div>
+<div class="area">
+Computer Science
+</div>
+<div class="institution">
+University of Ottawa
+</div>
+</div>
+<div class="date">
+<span class="startDate">
+2016
+</span>
+<span class="endDate">
+- Current
+</span>
+</div>
+</header>
+<ul class="courses">
+<li>CSI5149 - Probabilistic Graphical Models</li>
+<li>CSI5389 - Electronic Commerce Technologies</li>
+<li>CSI7163 - Advanced Topics in Computer Systems (Multimedia Communications)</li>
+</ul>
+<div class="item display" style="opacity:1">
+<div class='gpa'>
+<strong> Grade:</strong> <span>9.7/10</span>
+</div>
+<div class="summary">
+<p><p>Part-time student in the accelerated master's program. Focussing my studies on machine learning, particularly classification tasks and recommender systems. </p><p>Two courses remaining.</p></p>
+</div>
+</div>
+<header class="clear">
+<span class="space-left">
+<span class="fa fa-caret-right"></span>
+</span>
+<div class="header-left">
+<div class="studyType">
+Bachelor&#x27;s Degree
+</div>
+<div class="area">
+Computer Science
+</div>
+<div class="institution">
+University of Ottawa
+</div>
+</div>
+<div class="date">
+<span class="startDate">
+2011
+</span>
+<span class="endDate">
+- 2015
+</span>
+</div>
+</header>
+<div class="item display none" style="opacity:0">
+<div class='gpa'>
+<strong> Grade:</strong> <span>9.4/10 Cumulative GPA, 9.9/10 Diploma Grade Point Average</span>
+</div>
+<div class="summary">
+<p><p>Awarded the Faculty of Engineering plaque for the highest standing in the bachelor in computer science.</p></p>
+</div>
+</div>
+</section>
+</section>
+<section class="section">
+<header>
+<h2 class='section-title'>Awards</h2>
+</header>
+<section id="awards">
+<header class="clear">
+<span class="space-left">
+<span class="fa fa-caret-down"></span>
+</span>
+<div class="header-left">
+<div class="title">
+Faculty of Engineering Plaque in Computer Science
+</div>
+<div class="awarder">
+Univeristy of Ottawa
+</div>
+</div>
+<div class="date">
+2016
+</div>
+</header>
+<div class="item display" style="opacity:1">
+<div class="summary">
+<p><p>The Faculty of Engineering plaque for the highest standing in the bachelor in computer science.</p></p>
+</div>
+</div>
+<header class="clear">
+<span class="space-left">
+<span class="fa fa-caret-right"></span>
+</span>
+<div class="header-left">
+<div class="title">
+Chancellor Scholarship Finalist
+</div>
+<div class="awarder">
+Univeristy of Ottawa
+</div>
+</div>
+<div class="date">
+2011
+</div>
+</header>
+<div class="item display none" style="opacity:0">
+<div class="summary">
+<p><p>Students with greater than 92% entering average demonstrating leadership qualities and a commitment to academic and extracurricular activities.</p></p>
+</div>
+</div>
+<header class="clear">
+<span class="space-left">
+<span class="fa fa-caret-right"></span>
+</span>
+<div class="header-left">
+<div class="title">
+Nortel Networks Admission Scholarship
+</div>
+<div class="awarder">
+Univeristy of Ottawa
+</div>
+</div>
+<div class="date">
+2011
+</div>
+</header>
+<div class="item display none" style="opacity:0">
+<div class="summary">
+<p><p>Greater than 95% entering average.</p></p>
+</div>
+</div>
+<header class="clear">
+<span class="space-left">
+<span class="fa fa-caret-right"></span>
+</span>
+<div class="header-left">
+<div class="title">
+Merit scholarship
+</div>
+<div class="awarder">
+Univeristy of Ottawa
+</div>
+</div>
+</header>
+<div class="item display none" style="opacity:0">
+<div class="summary">
+<p><p>Outstanding academic success in previous academic year.</p></p>
+</div>
+</div>
+</section>
+</section>
+<section class="section margin1">
+<header>
+<h2 class='section-title' class='section-title'>Interests</h2>
+</header>
+<section id="interests">
+<div class="item">
+<h3 class="name">
+Machine Learning
+</h3>
+<ul class="keywords">
+<li>Recommender systems</li>
+<li>Text classification</li>
+</ul>
+</div>
+<div class="item">
+<h3 class="name">
+Software Engineering
+</h3>
+<ul class="keywords">
+<li>Design patterns</li>
+<li>Agile development</li>
+</ul>
+</div>
+<div class="item">
+<h3 class="name">
+Networking
+</h3>
+<ul class="keywords">
+<li>Home theatre PCs</li>
+<li>Home automation</li>
+</ul>
+</div>
+<div class="item">
+<h3 class="name">
+Hobbies
+</h3>
+<ul class="keywords">
+<li>Hunting &amp; Fishing</li>
+<li>Wakeboarding &amp; Snowboarding</li>
+<li>Music/Guitar</li>
+</ul>
+</div>
+</section>
+</section>
+</div>
+<script>
 			(function(){
 				var elements = document.querySelector("#resume");
 
@@ -1507,8 +816,7 @@ ul.courses li:hover {
 				elements.style.opacity = '1';
 			})();
 		</script>
-	<script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
-
+<script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
 </html>
 
   </article>
